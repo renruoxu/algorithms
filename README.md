@@ -1,2 +1,1 @@
-# algorithms
-Algorithm_learning
+# algorithms learning from Leetcode
