@@ -31,3 +31,7 @@
 ##### Breadth first traversals
 
 `1 2 3 4 5`
+
+### Arrays
+
+- [Newton's method](https://en.wikipedia.org/wiki/Newton%27s_method)
