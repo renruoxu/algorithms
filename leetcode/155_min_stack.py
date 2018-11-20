@@ -38,11 +38,25 @@ class MinStack(object):
         if len(self.stack) > 0:
             return min(self.stack)
         
+import collections
+class MinStack2(object):
+    def __init__(self):
+        """Implementation using deque"""
+        self.deque = collections.deque()
 
+    def push(self, x):
+        self.deque.append(x)
 
-# Your MinStack object will be instantiated and called as such:
-# obj = MinStack()
-# obj.push(x)
-# obj.pop()
-# param_3 = obj.top()
-# param_4 = obj.getMin()
+    def pop(self):
+        if len(self.deque) > 0:
+            self.deque.pop()
+
+    def top(self):
+        if len(self.deque) > 0:
+            a = self.deque.pop()
+            self.deque.append(a)
+            return a
+
+    def getMin(self):
+        if len(self.deque) > 0:
+            return min(self.deque)
